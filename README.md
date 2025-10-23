@@ -46,17 +46,6 @@ and includes a **global predeclared instance** for immediate use — just call `
 
 ---
 
-## 🧠 Implementation Details
-
-- Uses the Windows APIs [`QueryPerformanceCounter`](https://learn.microsoft.com/en-us/windows/win32/api/profileapi/nf-profileapi-queryperformancecounter)  
-  and [`QueryPerformanceFrequency`](https://learn.microsoft.com/en-us/windows/win32/api/profileapi/nf-profileapi-queryperformancefrequency)
-- Stores the 64-bit tick counter in a VBA `Currency` variable (8 bytes)
-- Converts ticks to seconds via simple division of two `Currency` values
-- Automatically initializes frequency on class creation (`Class_Initialize`)
-- `@PredeclaredId` enables the **global instance** (`Stopwatch`) available anywhere
-- Fully compatible with [Rubberduck annotations](https://rubberduckvba.com/annotations)
-- No external references or dependencies — pure VBA + WinAPI
-
 ### API References
 
 | API Function | Library | Description |
