@@ -40,3 +40,21 @@ No `New` keyword is needed — the class is **predeclared**:
 Stopwatch.Start
 Call SomeProcedure
 Debug.Print "Elapsed:", Stopwatch.Halt, "seconds"
+
+## 🧪 Benchmark Example
+Dim i As Long, total As Double
+
+Stopwatch.Start
+For i = 1 To 1000000
+    total = total + Sqr(i)
+Next
+Debug.Print "Elapsed time:", Stopwatch.Halt, "seconds"
+
+Example output:
+
+Elapsed time: 0.092133 seconds
+
+## 🔗 References
+
+Microsoft Docs – QueryPerformanceCounter
+Rubberduck VBA Add-in
