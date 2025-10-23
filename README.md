@@ -41,6 +41,8 @@ Stopwatch.Start
 Call SomeProcedure
 Debug.Print "Elapsed:", Stopwatch.Halt, "seconds"
 
+---
+
 ## 🧪 Benchmark Example
 Dim i As Long, total As Double
 
@@ -53,6 +55,8 @@ Debug.Print "Elapsed time:", Stopwatch.Halt, "seconds"
 Example output:
 
 Elapsed time: 0.092133 seconds
+
+---
 
 ## 🔗 References
 
