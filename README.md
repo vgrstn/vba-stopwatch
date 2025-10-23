@@ -74,7 +74,20 @@ That means a **global instance** named `Stopwatch` is available as soon as the c
 ```vb
 ' Basic usage with the global predeclared instance
 Stopwatch.Start
-Call SomeProcedure
+SomeProcedure
 Debug.Print "Elapsed:", Stopwatch.Halt, "seconds"
+```
 
----
+## 🧪 Example – Benchmark Loop
+
+A minimal example showing how to benchmark a code block or algorithm using the predeclared stopwatch instance.
+
+```vb
+Dim i As Long, total As Double
+
+Stopwatch.Start
+For i = 1 To 1000000
+    total = total + Sqr(i)
+Next
+Debug.Print "Elapsed time:", Stopwatch.Halt, "seconds"
+```
