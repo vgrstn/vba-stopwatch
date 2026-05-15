@@ -4,7 +4,7 @@
 ![Compatibility](https://img.shields.io/badge/Architecture-x86%20%7C%20x64-lightgrey)
 ![Rubberduck](https://img.shields.io/badge/Rubberduck-Ready-orange)
 
-High-resolution stopwatch for VBA using the Windows Performance Counter API.  
+High-resolution Stopwatch Class using the Windows Performance Counter API.  
 Provides **nanosecond-level precision** on supported CPUs, works on both 32- and 64-bit VBA hosts,  
 and includes a **global predeclared instance** for immediate use — just call `Stopwatch.Start`.
 
