@@ -10,6 +10,17 @@ and includes a **global predeclared instance** for immediate use — just call `
 
 ---
 
+## 📁 Files
+
+| File | Description |
+|---|---|
+| `Stopwatch.cls` | Source file with [Rubberduck](https://rubberduckvba.com/) annotations (`'@Description`, `'@DefaultMember`, `'@PredeclaredId`) |
+| `Stopwatch_WithAttributes.cls` | Ready-to-import version with VB attributes baked in — no Rubberduck required |
+
+Both files are identical in behaviour. Import `Stopwatch_WithAttributes.cls` if you are not using Rubberduck.
+
+---
+
 ## 📦 Features
 
 - High-resolution timing via `QueryPerformanceCounter` and `QueryPerformanceFrequency`
